@@ -1,0 +1,16 @@
+# RPLiDAR A1M8 Viewer - Windows Requirements
+
+# GUI Framework
+PySide6>=6.6.0
+
+# LiDAR Driver
+rplidar-roboticia>=0.9.2
+
+# Scientific Computing
+numpy>=1.24.0
+pyqtgraph>=0.13.0
+PyOpenGL>=3.1.7
+PyOpenGL_accelerate>=3.1.7
+
+# Optional: For better performance
+pyserial>=3.5
