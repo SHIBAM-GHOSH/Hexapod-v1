@@ -1,0 +1,20 @@
+import cv2
+
+# Open the default webcam
+cap = cv2.VideoCapture(0)
+
+# Keep showing frames until 'q' is pressed
+while True:
+    ret, frame = cap.read()
+
+    if not ret:
+        print("Failed to read frame")
+        break
+
+    cv2.imshow("Camera Test", frame)
+
+    if cv2.waitKey(1) & 0xFF == ord("q"):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
